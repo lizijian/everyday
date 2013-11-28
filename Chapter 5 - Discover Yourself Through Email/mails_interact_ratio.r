@@ -1,7 +1,7 @@
 sink(file="ch08_ex6.txt")
 
-in_data <- read.table("inbox_data_enron.csv", header=TRUE, sep=",")
-sent_data <- read.table("sent_data_enron.csv", header=TRUE, sep=",")
+in_data <- read.csv("inbox_data_enron.csv", header=TRUE, sep=",")
+sent_data <- read.csv("sent_data_enron.csv", header=TRUE, sep=",")
 
 from <- data.frame(table(in_data['from']))
 to <- data.frame(table(sent_data['to']))
